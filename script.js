@@ -7,10 +7,10 @@ Exiba o resultado no console ou em um alert.
 */
 
 function somaNumeros() {
-    let num = parseFloat(prompt("Digite o primeiro número:"))
-    let num2 = parseFloat(prompt("Digite o segundo número:"))
-    let soma = num + num2
-    console.log(soma)
+    let num = parseFloat(prompt("Digite o primeiro número:"));
+    let num2 = parseFloat(prompt("Digite o segundo número:"));
+    let soma = num + num2;
+    console.log(soma);
 }
 
 /*
@@ -24,11 +24,11 @@ Exiba no console "O número é par" ou "O número é ímpar".
 */
 
 function verificarParOuImpar() {
-    let num = parseFloat(prompt("Digite um numero e direi se é par o impar"))
+    let num = parseFloat(prompt("Digite um numero e direi se é par o impar"));
     if (num % 2 == 0) {
-        console.log("O número é par")
+        console.log("O número é par");
         } else {
-            console.log("O número é impar")
+            console.log("O número é impar");
             }
 }
 
@@ -43,7 +43,7 @@ Modifique o exercício para usar um while.
 
 function contagemDeNumeros() {
     for (let i = 1; i <= 10; i++) {
-        console.log(i)
+        console.log(i);
         }
 }
 
@@ -58,9 +58,9 @@ Exiba o resultado no console.
 */
 
 function tabuadaDeUmNumero() {
-    let num = parseFloat(prompt("Digite um numero e direi a tabuada"))
+    let num = parseFloat(prompt("Digite um numero e direi a tabuada"));
     for (let i = 1; i <= 10; i++) {
-        console.log(num*i)
+        console.log(num*i);
         }
 }
 
@@ -75,9 +75,9 @@ Exiba o maior número no console.
 */
 
 function maiorNumeroLista() {
-    var lista = [3, 7, 2, 9, 5]
-    var maior = Math.max(...lista)
-    console.log(maior)
+    var lista = [3, 7, 2, 9, 5];
+    var maior = Math.max(...lista);
+    console.log(maior);
 }
 
 /*
@@ -91,9 +91,9 @@ Inverta a ordem com o método reverse e transforme novamente em string com join.
 */
 
 function inverterPalavra() {
-    let palavra = prompt("Digite uma palavra")
-    let palavraInversa = [...palavra].reverse().join('')
-    console.log(palavraInversa)
+    let palavra = prompt("Digite uma palavra");
+    let palavraInversa = [...palavra].reverse().join('');
+    console.log(palavraInversa);
 }
 
 /*
@@ -107,9 +107,9 @@ Exiba o resultado no console.
 */
 
 function somaElementosArray() {
-    let array = [1, 2, 3, 4, 5]
-    let soma = array.reduce((total, quantidade ) => total + quantidade)
-    console.log(soma)
+    let array = [1, 2, 3, 4, 5];
+    let soma = array.reduce((total, quantidade ) => total + quantidade);
+    console.log(soma);
 }
 
 /*
@@ -123,14 +123,14 @@ Exiba "É primo" ou "Não é primo".
 */
 
 function verificarPrimo() {
-    let num = parseInt(prompt("Digite um número"))
+    let num = parseInt(prompt("Digite um número"));
     for (let i = 2; i < num; i++) {
         if (num % i == 0) {
-            console.log("Não é primo")
+            console.log("Não é primo");
             return
             }
         }
-            console.log("É primo")
+            console.log("É primo");
 }
 
 /*
@@ -144,12 +144,12 @@ Exiba o resultado no console.
 */
 
 function calcularFatorial() {
-    let num = parseInt(prompt("Digite um número"))
-    let fat = 1
+    let num = parseInt(prompt("Digite um número"));
+    let fat = 1;
     for (let i = 1; i <= num; i++) {
-        fat *= i
+        fat *= i;
     }
-    console.log(fat)
+    console.log(fat);
 }
 
 /*
@@ -163,14 +163,15 @@ Exiba no console se a palavra é ou não um palíndromo.
 */
 
 function verificarPalindromo() {
-    let palavra = prompt("Digite uma palavra")
-    let palavraInversa = [...palavra].reverse().join('')
+    let palavra = prompt("Digite uma palavra");
+    let palavraInversa = [...palavra].reverse().join('');
     if (palavra == palavraInversa) {
-        console.log("É um palíndromo")
+        console.log("É um palíndromo");
     } else {
-        console.log("Não é um palíndromo")
+        console.log("Não é um palíndromo");
     }
 }
+
 /*
 11. Contar Vogais em uma Frase
 Descrição:
@@ -180,16 +181,18 @@ Peça ao usuário uma frase.
 Use um loop para verificar cada caractere.
 Conte as vogais (a, e, i, o, u) e exiba o total.
 */
+
 function contarNaoConsoantes() {
-    let frase = prompt("Digite uma frase")
-    let vogais = 0
+    let frase = prompt("Digite uma frase");
+    let vogais = 0;
     for (let i = 0; i < frase.length; i++) {
         if ('aáàâãeéèêiíïoóôõöuú'.includes(frase[i].toLowerCase())) {
-            vogais += 1
+            vogais += 1;
             }
         }
-        console.log(vogais)
+        console.log(vogais);
 }
+
 /*
 12. Gerar Números Aleatórios
 Descrição:
@@ -198,10 +201,12 @@ Tarefas:
 Use a função Math.random e ajuste o intervalo para 1 a 100.
 Exiba o número gerado no console.
 */
+
 function numeroRandola() {
-    let num = Math.floor(Math.random()*100)
-    console.log(num)
+    let num = Math.floor(Math.random()*100);
+    console.log(num);
 }
+
 /*
 13. Substituir Números Negativos por Zero
 Descrição:
@@ -211,9 +216,17 @@ Crie um array como [4, -3, 2, -1, 0].
 Use um loop para verificar cada número.
 Substitua os números negativos por 0 e exiba o array no console.
 */
+
 function substituirNegativos() {
-    let array = [4, -3, 2, -1, 0]
+    let array = [4, -3, 2, -1, 0];
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] < 0) {
+            array[i] = 0;
+            }
+        }
+        console.log(array);
 }
+
 /*
 14. Verificar Palavras Proibidas em um Texto
 Descrição:
@@ -222,7 +235,17 @@ Tarefas:
 Crie um array de palavras proibidas como ['palavra1', 'palavra2'].
 Peça ao usuário uma frase.
 Verifique se a frase contém alguma palavra do array e exiba uma mensagem de alerta.
+*/
 
+function verificarPalavrasProibidasDeUmTexto() {
+    let palavrasProibidas = ['palavra1', 'palavra2'];
+    let frase = prompt('Digite uma frase:').trim().toLocaleLowerCase();
+    if (palavrasProibidas.some(palavra => frase.includes(palavra))) {
+        alert('tem caroço nesse angu');
+        }
+}
+
+/*
 15. Gerar uma Lista de Números Pares
 Descrição:
 Crie uma lista de números pares entre 1 e 20.
