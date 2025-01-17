@@ -40,11 +40,21 @@ function verificarParOuImpar() {
 ? Tarefas:
 ? Utilize um loop for para imprimir os números no console.
 ? Modifique o exercício para usar um while.
+TODO: com for :)
 */
-
 function contagemDeNumeros() {
     for (let i = 1; i <= 10; i++) {
         console.log(i);
+        }
+}
+/*
+TODO: com while :(
+*/
+function contagemDeNumerosWhile() {
+    let i = 1;
+    while (i <= 10) {
+        console.log(i);
+        i++;
         }
 }
 
