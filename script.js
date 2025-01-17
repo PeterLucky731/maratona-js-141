@@ -33,11 +33,21 @@ function verificarParOuImpar() {
 ? Tarefas:
 ? Utilize um loop for para imprimir os números no console.
 ? Modifique o exercício para usar um while.
+TODO: com for :)
 */
-
 function contagemDeNumeros() {
     for (let i = 1; i <= 10; i++) {
         console.log(i);
+        }
+}
+/*
+TODO: com while :(
+*/
+function contagemDeNumerosWhile() {
+    let i = 1;
+    while (i <= 10) {
+        console.log(i);
+        i++;
         }
 }
 
@@ -66,8 +76,22 @@ function tabuadaDeUmNumero() {
 ? Crie um array como [3, 7, 2, 9, 5].
 ? Use um loop para comparar os números e encontrar o maior.
 ? Exiba o maior número no console.
-*/
 
+TODO: usando loop :C
+*/
+function encontrarMaiorNumeroUsandoLoopDaDesgraca() {
+    let lista = [3, 7, 2, 9, 5];
+    let maior = lista[0];
+    for (let i = 1; i < lista.length; i++) {
+        if (lista[i] > maior) {
+            maior = lista[i];
+        }
+    }
+            console.log(maior);
+}
+/*
+TODO: usando math max e spread :D
+*/
 function maiorNumeroLista() {
     var lista = [3, 7, 2, 9, 5];
     var maior = Math.max(...lista);
