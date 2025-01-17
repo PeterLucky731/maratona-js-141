@@ -73,8 +73,22 @@ function tabuadaDeUmNumero() {
 ? Crie um array como [3, 7, 2, 9, 5].
 ? Use um loop para comparar os números e encontrar o maior.
 ? Exiba o maior número no console.
-*/
 
+TODO: usando loop :C
+*/
+function encontrarMaiorNumeroUsandoLoopDaDesgraca() {
+    let lista = [3, 7, 2, 9, 5];
+    let maior = lista[0];
+    for (let i = 1; i < lista.length; i++) {
+        if (lista[i] > maior) {
+            maior = lista[i];
+        }
+    }
+            console.log(maior);
+}
+/*
+TODO: usando math max e spread :D
+*/
 function maiorNumeroLista() {
     var lista = [3, 7, 2, 9, 5];
     var maior = Math.max(...lista);
